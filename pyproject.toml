@@ -11,3 +11,17 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+[tool.pytest.ini_options]
+addopts = "--cov=logdoc --cov-report=term-missing"
+
+[tool.ruff]
+line-length = 100
+
+[project]
+name = "logdoc"
+version = "0.1.0"
+description = "Logging framework for ByteNest/ScanNest"
+authors = [{name = "Jan Janssens"}]
+readme = "README.md"
+requires-python = ">=3.8"
+
