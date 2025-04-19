@@ -1,0 +1,13 @@
+pyproject.toml
+logdoc/core/__init__.py
+logdoc/core/header_injector.py
+logdoc/errors/__init__.py
+logdoc/errors/logdoc_exceptions.py
+logdoc/logdoc.egg-info/PKG-INFO
+logdoc/logdoc.egg-info/SOURCES.txt
+logdoc/logdoc.egg-info/dependency_links.txt
+logdoc/logdoc.egg-info/entry_points.txt
+logdoc/logdoc.egg-info/requires.txt
+logdoc/logdoc.egg-info/top_level.txt
+logdoc/utils/__init__.py
+logdoc/utils/filemeta.py

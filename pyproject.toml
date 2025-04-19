@@ -1,0 +1,13 @@
+[project]
+name = "logdoc"
+version = "0.1.0"
+description = "CLI tool for injecting logging and documentation headers into Python files"
+authors = [{name = "Jan Janssens", email = "jan@bytenestdao.io"}]
+dependencies = ["typer[all]"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

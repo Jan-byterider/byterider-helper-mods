@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: logdoc
+Version: 0.1.0
+Summary: CLI tool for injecting logging and documentation headers into Python files
+Author-email: Jan Janssens <jan@bytenestdao.io>
+Requires-Dist: typer[all]
