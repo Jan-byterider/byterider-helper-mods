@@ -14,3 +14,4 @@ src/logdoc/errors/__init__.py
 src/logdoc/errors/logdoc_exceptions.py
 src/logdoc/utils/__init__.py
 src/logdoc/utils/filemeta.py
+tests/test_smoke.py
