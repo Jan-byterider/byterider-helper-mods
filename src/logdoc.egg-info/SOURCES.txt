@@ -5,6 +5,7 @@ src/logdoc/logger.py
 src/logdoc.egg-info/PKG-INFO
 src/logdoc.egg-info/SOURCES.txt
 src/logdoc.egg-info/dependency_links.txt
+src/logdoc.egg-info/entry_points.txt
 src/logdoc.egg-info/requires.txt
 src/logdoc.egg-info/top_level.txt
 src/logdoc/core/__init__.py
