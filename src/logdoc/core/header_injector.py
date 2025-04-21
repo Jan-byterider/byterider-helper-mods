@@ -88,3 +88,21 @@ def inject_headers(project_root, author="Unknown"):
                 if inject_logging_and_header(full_path, author):
                     updated_files.append(full_path)
     return updated_files
+
+import argparse
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Inject headers and log_event import into Python files.")
+    parser.add_argument("project_root", help="Path to the project directory")
+    parser.add_argument("--author", default="Unknown", help="Author name for header injection")
+    
+    args = parser.parse_args()
+    
+    updated_files = inject_headers(args.project_root, args.author)
+    
+    if updated_files:
+        print("Headers injected into the following files:")
+        for f in updated_files:
+            print(f" - {f}")
+    else:
+        print("No files required header injection.")
