@@ -7,6 +7,10 @@ dependencies = ["typer[all]"]
 readme = "README.md"
 requires-python = ">=3.8"
 
+[project.scripts]
+logdoc = "logdoc.cli:main"
+
+
 [project.optional-dependencies]
 dev = [
     "pytest",
