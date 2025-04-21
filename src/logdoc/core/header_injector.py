@@ -61,10 +61,13 @@ def inject_logging_and_header(file_path, author="Unknown"):
             updated = True
 
         if updated:
+            print(f"Checking file: {file_path}")
             with open(file_path, "w", encoding="utf-8") as f:
                 f.writelines(new_lines)
             return True
-        return False
+        else:
+            print(f"Checking file: {file_path}")
+            return False
 
     except Exception as e:
         raise HeaderInjectionError(file_path, str(e))
