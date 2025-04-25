@@ -6,3 +6,6 @@ Author-email: Jan Janssens <jan@byterider.be>
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 Requires-Dist: typer[all]
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"

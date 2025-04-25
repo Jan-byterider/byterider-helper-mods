@@ -1,3 +1,9 @@
+# Validation Status:
+# - Security Validation: Nestor [2025-04-24] ✅
+# - Strategic Validation: Pulse [2025-04-24] ✅
+# - Governance Validation: Agent-47 [2025-04-24] ✅
+
+
 # logdoc/core/header_injector.py
 import os
 from pathlib import Path
@@ -59,15 +65,12 @@ def inject_logging_and_header(file_path, author="Unknown"):
                     insert_index = idx + 1
             new_lines.insert(insert_index, "from logdoc.logger import log_event\n")
             updated = True
-        print(f"Checking file: {file_path}")
+
         if updated:
-            print(f"Checking file: {file_path}")
             with open(file_path, "w", encoding="utf-8") as f:
                 f.writelines(new_lines)
             return True
-        else:
-            print(f"Checking file: {file_path}")
-            return False
+        return False
 
     except Exception as e:
         raise HeaderInjectionError(file_path, str(e))

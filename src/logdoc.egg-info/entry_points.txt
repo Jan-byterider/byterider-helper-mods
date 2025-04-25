@@ -1,2 +1,0 @@
-[console_scripts]
-logdoc = logdoc.cli:main
