@@ -5,6 +5,7 @@ src/logdoc/logger.py
 src/logdoc.egg-info/PKG-INFO
 src/logdoc.egg-info/SOURCES.txt
 src/logdoc.egg-info/dependency_links.txt
+src/logdoc.egg-info/entry_points.txt
 src/logdoc.egg-info/requires.txt
 src/logdoc.egg-info/top_level.txt
 src/logdoc/core/__init__.py
@@ -14,4 +15,6 @@ src/logdoc/errors/__init__.py
 src/logdoc/errors/logdoc_exceptions.py
 src/logdoc/utils/__init__.py
 src/logdoc/utils/filemeta.py
+src/logdoc/utils/mask.py
+tests/test_logdoc_masking.py
 tests/test_smoke.py
